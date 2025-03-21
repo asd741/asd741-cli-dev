@@ -1,1 +1,76 @@
-39 error
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '8.2.1',
+0 silly argv   '$0': '..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.2.1
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath C:\Users\asd741\OneDrive\Desktop\asd741-cli-dev
+4 verbose session b2387bff5ea718a0
+5 verbose user-agent lerna/8.2.1/node@v22.14.0+x64 (win32)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '8.2.1' }
+7 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+8 verbose rootPath C:\Users\asd741\OneDrive\Desktop\asd741-cli-dev
+9 info current version 0.0.2
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly getCurrentBranch
+13 verbose currentBranch main
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 2
+17 silly hasTags
+18 verbose hasTags true
+19 silly git-describe.sync "v0.0.2-2-g8a8acea" => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"2","sha":"8a8acea","isDirty":false}
+20 info Looking for changed packages since v0.0.2
+21 silly checking diff packages/core
+22 silly found diff in packages/core/package.json
+22 silly found diff in packages/core/package.json.2465768261
+23 verbose filtered diff [
+23 verbose filtered diff   'packages/core/package.json',
+23 verbose filtered diff   'packages/core/package.json.2465768261'
+23 verbose filtered diff ]
+24 silly checking diff packages/utils
+25 silly found diff in packages/utils/package.json
+25 silly found diff in packages/utils/package.json.502215242
+26 verbose filtered diff [
+26 verbose filtered diff   'packages/utils/package.json',
+26 verbose filtered diff   'packages/utils/package.json.502215242'
+26 verbose filtered diff ]
+27 verbose updated @asd741-cli-dev/core
+28 verbose updated @asd741-cli-dev/utils
+29 verbose git-describe undefined => "v0.0.2-2-g8a8acea"
+30 silly git-describe parsed => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"2","sha":"8a8acea","isDirty":false}
+31 info execute Skipping releases
+32 silly lifecycle No script for "preversion" in "asd741-cli-dev", continuing
+33 silly lifecycle No script for "preversion" in "@asd741-cli-dev/core", continuing
+34 silly lifecycle No script for "preversion" in "@asd741-cli-dev/utils", continuing
+35 verbose version @asd741-cli-dev/utils has no lockfile. Skipping lockfile update.
+36 verbose version @asd741-cli-dev/core has no lockfile. Skipping lockfile update.
+37 silly lifecycle No script for "version" in "@asd741-cli-dev/core", continuing
+38 silly lifecycle No script for "version" in "@asd741-cli-dev/utils", continuing
+39 silly lifecycle No script for "version" in "asd741-cli-dev", continuing
+40 verbose version Updating root package-lock.json
+41 silly gitAdd [
+41 silly gitAdd   'packages/core/package.json',
+41 silly gitAdd   'packages/utils/package.json',
+41 silly gitAdd   'lerna.json',
+41 silly gitAdd   'package-lock.json'
+41 silly gitAdd ]
+42 silly gitCommit v1.0.0
+43 verbose git [ 'commit', '-m', 'v1.0.0' ]
+44 silly gitTag v1.0.0 git tag %s -m %s
+45 verbose git [ 'tag', 'v1.0.0', '-m', 'v1.0.0' ]
+46 silly lifecycle No script for "postversion" in "@asd741-cli-dev/core", continuing
+47 silly lifecycle No script for "postversion" in "@asd741-cli-dev/utils", continuing
+48 silly lifecycle No script for "postversion" in "asd741-cli-dev", continuing
+49 info git Pushing tags...
+50 silly gitPush origin main
+51 info publish Publishing packages to npm...
+52 warn ENOLICENSE Packages @asd741-cli-dev/core and @asd741-cli-dev/utils are missing a license.
+52 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+52 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+53 silly getCurrentSHA
+54 verbose getCurrentSHA 537ea75c063923ef4c430a1d7edd35d59fe7c2ca
+55 error
