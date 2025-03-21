@@ -16,7 +16,7 @@
   "scripts": {
     "test": "node ./__tests__/core.test.js"
   },
-  "gitHead": "420000cf3135c3487da9740f84506178b30f4f8d",
+  "gitHead": "a2fcf8e9f774cd263661e688f58c444361784eb0",
   "publishConfig": {
     "access": "public"
   }

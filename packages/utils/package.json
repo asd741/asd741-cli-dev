@@ -16,7 +16,7 @@
   "scripts": {
     "test": "node ./__tests__/utils.test.js"
   },
-  "gitHead": "537ea75c063923ef4c430a1d7edd35d59fe7c2ca",
+  "gitHead": "a2fcf8e9f774cd263661e688f58c444361784eb0",
   "publishConfig": {
     "access": "public"
   }
