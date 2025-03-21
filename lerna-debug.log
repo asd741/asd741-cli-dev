@@ -1,1 +1,61 @@
-32 error
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '8.2.1',
+0 silly argv   '$0': '..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.2.1
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath C:\Users\asd741\project\asd741-cli-dev
+4 verbose session 80de623b47cee14d
+5 verbose user-agent lerna/8.2.1/node@v22.14.0+x64 (win32)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '8.2.1' }
+7 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+8 verbose rootPath C:\Users\asd741\project\asd741-cli-dev
+9 info current version 0.0.0
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly getCurrentBranch
+13 verbose currentBranch main
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 1
+17 silly hasTags
+18 verbose hasTags false
+19 info Assuming all packages changed
+20 verbose updated @asd741-cli-dev/core
+21 verbose updated @asd741-cli-dev/utils
+22 verbose git-describe undefined => "7c6f0a2"
+23 silly git-describe parsed => {"refCount":"2","sha":"7c6f0a2","isDirty":false}
+24 info execute Skipping releases
+25 silly lifecycle No script for "preversion" in "asd741-cli-dev", continuing
+26 silly lifecycle No script for "preversion" in "@asd741-cli-dev/core", continuing
+27 silly lifecycle No script for "preversion" in "@asd741-cli-dev/utils", continuing
+28 verbose version @asd741-cli-dev/core has no lockfile. Skipping lockfile update.
+29 verbose version @asd741-cli-dev/utils has no lockfile. Skipping lockfile update.
+30 silly lifecycle No script for "version" in "@asd741-cli-dev/core", continuing
+31 silly lifecycle No script for "version" in "@asd741-cli-dev/utils", continuing
+32 silly lifecycle No script for "version" in "asd741-cli-dev", continuing
+33 verbose version Updating root package-lock.json
+34 silly gitAdd [
+34 silly gitAdd   'packages/core/package.json',
+34 silly gitAdd   'packages/utils/package.json',
+34 silly gitAdd   'lerna.json',
+34 silly gitAdd   'package-lock.json'
+34 silly gitAdd ]
+35 silly gitCommit v0.0.1
+36 verbose git [ 'commit', '-m', 'v0.0.1' ]
+37 silly gitTag v0.0.1 git tag %s -m %s
+38 verbose git [ 'tag', 'v0.0.1', '-m', 'v0.0.1' ]
+39 silly lifecycle No script for "postversion" in "@asd741-cli-dev/core", continuing
+40 silly lifecycle No script for "postversion" in "@asd741-cli-dev/utils", continuing
+41 silly lifecycle No script for "postversion" in "asd741-cli-dev", continuing
+42 info git Pushing tags...
+43 silly gitPush origin main
+44 info publish Publishing packages to npm...
+45 warn ENOLICENSE Packages @asd741-cli-dev/core and @asd741-cli-dev/utils are missing a license.
+45 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+45 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+46 silly getCurrentSHA
+47 verbose getCurrentSHA 165dfea006ce83dfa8c68daadf55c0c7e5959444
+48 error
