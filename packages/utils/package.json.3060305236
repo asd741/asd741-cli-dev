@@ -1,11 +1,11 @@
 {
-  "name": "@asd741-cli-dev/core",
+  "name": "@asd741-cli-dev/utils",
   "version": "1.0.3",
   "description": "> TODO: description",
   "author": "iceCreamRice <x22833593@gmail.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/core.js",
+  "main": "lib/utils.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -14,9 +14,9 @@
     "lib"
   ],
   "scripts": {
-    "test": "node ./__tests__/core.test.js"
+    "test": "node ./__tests__/utils.test.js"
   },
-  "gitHead": "bf601f71e0f2a05211ddbc850ed361bfc8d9744e",
+  "gitHead": "537ea75c063923ef4c430a1d7edd35d59fe7c2ca",
   "publishConfig": {
     "access": "public"
   }
