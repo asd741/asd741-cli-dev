@@ -25,7 +25,11 @@
   },
   "dependencies": {
     "@asd741-cli-dev/log": "file:../../utils/log",
+    "colors": "^1.4.0",
     "import-local": "^3.2.0",
-    "npmlog": "^7.0.1"
+    "npmlog": "^7.0.1",
+    "root-check": "^2.0.0",
+    "semver": "^7.7.1",
+    "sudo-block": "^5.0.0"
   }
 }
