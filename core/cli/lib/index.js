@@ -1,6 +1,8 @@
 'use strict';
 module.exports = core;
 const semver = require('semver')
+const userHome = require('user-home')
+const pathExists = require('path-exists').sync;
 const log = require('@asd741-cli-dev/log')
 const constant = require('./const')
 const colors = require('colors/safe')
@@ -10,8 +12,14 @@ function core() {
     checkPkgVersion()
     checkNodeVersion()
     checkRoot()
+    checkUserHome()
   } catch (e) {
     log.error(e.message)
+  }
+}
+function checkUserHome(){
+  if(!userHome||!pathExists(userHome)){
+    throw new Error(colors.red('當前登入用戶主目錄不存在'))
   }
 }
 async function checkRoot() {
