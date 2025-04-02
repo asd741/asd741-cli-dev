@@ -25,8 +25,11 @@
   },
   "dependencies": {
     "@asd741-cli-dev/log": "file:../../utils/log",
+    "@asd741-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
     "colors": "^1.4.0",
+    "dotenv": "^16.4.7",
     "import-local": "^3.2.0",
+    "minimist": "^1.2.8",
     "npmlog": "^7.0.1",
     "path-exists": "^5.0.0",
     "root-check": "^2.0.0",
