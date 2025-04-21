@@ -1,0 +1,40 @@
+{
+  "name": "@imooc-cli-dev/package",
+  "version": "1.0.5",
+  "description": "imooc-cli-dev npm modules",
+  "author": "sam <247765564@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.imooc.com/class-110/imooc-cli-dev.git"
+  },
+  "scripts": {
+    "test": "mocha __tests__/package.test.js"
+  },
+  "dependencies": {
+    "@asd741-cli-dev/format-path": "^1.0.5",
+    "@asd741-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
+    "@asd741-cli-dev/utils": "file:../../utils/utils",
+    "fs-extra": "^9.0.1",
+    "npminstall": "^4.10.0",
+    "path-exists": "^4.0.0",
+    "pkg-dir": "^5.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.0",
+    "should": "^13.2.3"
+  },
+  "gitHead": "50a91c0a755217bc420511a66e41655ff30f5f36"
+}

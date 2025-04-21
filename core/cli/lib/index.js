@@ -7,8 +7,6 @@ const log = require('@asd741-cli-dev/log')
 const constant = require('./const')
 const colors = require('colors/safe')
 const pkg = require('../package.json')
-let args,config;
-
 // 声明 pathExists 作为公共函数
 let pathExists;
 (async function() {
@@ -18,17 +16,83 @@ let pathExists;
 
 async function core() {
   try {
-    checkPkgVersion()
-    checkNodeVersion()
-    checkRoot()
-    checkUserHome()
-    checkInputArgs();
-    checkEnv();
-    await checkGlobalUpdate();
+    await prepare();
+    registerCommand();
+
   } catch (e) {
     log.error(e.message)
   }
 }
+
+function registerCommand() {
+  program
+    .name(Object.keys(pkg.bin)[0])
+    .usage('<command> [options]')
+    .version(pkg.version)
+    .option('-d, --debug', '是否开启调试模式', false)
+    .option('-tp, --targetPath <targetPath>', '是否指定本地调试文件路径', '');
+
+  program
+    .command('init [projectName]')
+    .option('-f, --force', '是否强制初始化项目')
+    .action(exec);
+
+  program
+    .command('add [templateName]')
+    .option('-f, --force', '是否强制添加代码')
+    .action(exec);
+
+  program
+    .command('publish')
+    .option('--refreshServer', '强制更新远程Git仓库')
+    .option('--refreshToken', '强制更新远程仓库token')
+    .option('--refreshOwner', '强制更新远程仓库类型')
+    .option('--buildCmd <buildCmd>', '构建命令')
+    .option('--prod', '是否正式发布')
+    .option('--sshUser <sshUser>', '模板服务器用户名')
+    .option('--sshIp <sshIp>', '模板服务器IP或域名')
+    .option('--sshPath <sshPath>', '模板服务器上传路径')
+    .action(exec);
+
+  // 开启debug模式
+  program.on('option:debug', function() {
+    if (program.debug) {
+      process.env.LOG_LEVEL = 'verbose';
+    } else {
+      process.env.LOG_LEVEL = 'info';
+    }
+    log.level = process.env.LOG_LEVEL;
+  });
+
+  // 指定targetPath
+  program.on('option:targetPath', function() {
+    process.env.CLI_TARGET_PATH = program.targetPath;
+  });
+
+  // 对未知命令监听
+  program.on('command:*', function(obj) {
+    const availableCommands = program.commands.map(cmd => cmd.name());
+    console.log(colors.red('未知的命令：' + obj[0]));
+    if (availableCommands.length > 0) {
+      console.log(colors.red('可用命令：' + availableCommands.join(',')));
+    }
+  });
+
+  program.parse(process.argv);
+
+  if (program.args && program.args.length < 1) {
+    program.outputHelp();
+    console.log();
+  }
+}
+async function prepare() {
+  checkPkgVersion();
+  checkRoot();
+  checkUserHome();
+  checkEnv();
+  await checkGlobalUpdate();
+}
+
 async function checkGlobalUpdate() {
   const currentVersion = pkg.version;
   const npmName = pkg.name;
@@ -48,7 +112,6 @@ function checkEnv() {
       path: path.resolve(userHome, '.env')
     });
   }
-  config = createDefaultConfig()
   log.verbose('環境變數',process.env.CLI_HOME_PATH)
 }
 function createDefaultConfig(){
@@ -63,20 +126,7 @@ function createDefaultConfig(){
   process.env.CLI_HOME_PATH = cliConfig.cliHome;
   return cliConfig
 }
-function checkInputArgs() {
-  const minimist = require('minimist');
-  args = minimist(process.argv.slice(2));
-  checkArgs(args)
-}
 
-function checkArgs() {
-  if (args.debug) {
-    process.env.LOG_LEVEL = 'verbose'
-  } else {
-    process.env.LOG_LEVEL = 'info'
-  }
-  log.level = process.env.LOG_LEVEL
-}
 
 async function checkUserHome() {
   if (!userHome) {
