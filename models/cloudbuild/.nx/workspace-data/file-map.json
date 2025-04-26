@@ -1,0 +1,27 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.1",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": "README.md",
+        "hash": "2420913675043042433"
+      },
+      {
+        "file": "__tests__/cloudbuild.test.js",
+        "hash": "8324889959951358048"
+      },
+      {
+        "file": "lib/index.js",
+        "hash": "6299577343409884384"
+      },
+      {
+        "file": "package.json",
+        "hash": "8377992881687435224"
+      }
+    ]
+  }
+}
