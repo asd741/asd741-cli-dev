@@ -5,12 +5,12 @@ const fse = require('fs-extra');
 const should = require('should');
 
 const Package = require('../lib');
-const TARGET_PATH = '/Users/sam/Desktop/imooc-cli-dev/commands/init';
-const TARGET_PATH2 = '/Users/sam/.imooc-cli-dev';
-const STORE_DIR = '/Users/sam/.imooc-cli-dev/node_modules';
-const PACKAGE_NAME = '@imooc-cli-dev/init';
-const PACKAGE_NAME2 = '@imooc-cli/init';
-const PACKAGE_NAME_CONVERT = '@imooc-cli-dev_init';
+const TARGET_PATH = '/Users/sam/Desktop/asd741-cli-dev/commands/init';
+const TARGET_PATH2 = '/Users/sam/.asd741-cli-dev';
+const STORE_DIR = '/Users/sam/.asd741-cli-dev/node_modules';
+const PACKAGE_NAME = '@asd741-cli-dev/init';
+const PACKAGE_NAME2 = '@asd741-cli/init';
+const PACKAGE_NAME_CONVERT = '@asd741-cli-dev_init';
 const PACKAGE_VERSION = '1.0.0';
 const PACKAGE_LATEST_VERSION = 'latest';
 
@@ -95,14 +95,14 @@ describe('Package prepare方法测试', function() {
 describe('Package cacheFilePath属性测试', function() {
   it('获取cacheFilePath属性', function() {
     const instance = createPackageInstance();
-    instance.cacheFilePath.should.equal('/Users/sam/.imooc-cli-dev/node_modules/_@imooc-cli-dev_init@1.0.0@@imooc-cli-dev/init');
+    instance.cacheFilePath.should.equal('/Users/sam/.asd741-cli-dev/node_modules/_@asd741-cli-dev_init@1.0.0@@asd741-cli-dev/init');
   });
 });
 
 describe('Package getSpecificCacheFilePath方法测试', function() {
   it('获取getSpecificCacheFilePath属性', function() {
     const instance = createPackageInstance();
-    instance.getSpecificCacheFilePath('1.0.0').should.equal('/Users/sam/.imooc-cli-dev/node_modules/_@imooc-cli-dev_init@1.0.0@@imooc-cli-dev/init');
+    instance.getSpecificCacheFilePath('1.0.0').should.equal('/Users/sam/.asd741-cli-dev/node_modules/_@asd741-cli-dev_init@1.0.0@@asd741-cli-dev/init');
   });
 });
 
@@ -140,7 +140,7 @@ describe('Package install方法测试', function() {
       packageVersion: PACKAGE_LATEST_VERSION,
     });
     await instance.install();
-    (await instance.getRootFilePath()).should.equal('/Users/sam/.imooc-cli-dev/node_modules/_@imooc-cli_init@1.1.2@@imooc-cli/init/lib/index.js');
+    (await instance.getRootFilePath()).should.equal('/Users/sam/.asd741-cli-dev/node_modules/_@asd741-cli_init@1.1.2@@asd741-cli/init/lib/index.js');
   });
   after(function() {
     if (fs.existsSync(STORE_DIR)) {
@@ -159,7 +159,7 @@ describe('Package update方法测试', function() {
       packageVersion: PACKAGE_VERSION,
     });
     await instance.update();
-    (await instance.getRootFilePath()).should.equal('/Users/sam/.imooc-cli-dev/node_modules/_@imooc-cli_init@1.1.2@@imooc-cli/init/lib/index.js');
+    (await instance.getRootFilePath()).should.equal('/Users/sam/.asd741-cli-dev/node_modules/_@asd741-cli_init@1.1.2@@asd741-cli/init/lib/index.js');
   });
   after(function() {
     if (fs.existsSync(STORE_DIR)) {

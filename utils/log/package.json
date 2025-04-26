@@ -1,9 +1,12 @@
 {
   "name": "@asd741-cli-dev/log",
-  "version": "1.0.0",
-  "description": "> TODO: description",
-  "author": "iceCreamRice <x22833593@gmail.com>",
-  "homepage": "https://github.com/asd741/asd741-cli-dev#readme",
+  "version": "1.0.4",
+  "description": "asd741-cli-dev log",
+  "keywords": [
+    "log"
+  ],
+  "author": "asd741 <a22833593@gmail.com>",
+  "homepage": "",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -16,17 +19,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/asd741/asd741-cli-dev.git"
-  },
   "scripts": {
-    "test": "node ./__tests__/@asd741-cli-dev/log.test.js"
-  },
-  "bugs": {
-    "url": "https://github.com/asd741/asd741-cli-dev/issues"
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "npmlog": "^7.0.1"
+    "npmlog": "^4.1.2"
   }
 }

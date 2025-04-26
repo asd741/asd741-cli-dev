@@ -2,6 +2,6 @@
 
 const publish = require('..');
 
-describe('@imooc-cli-dev/publish', () => {
+describe('@asd741-cli-dev/publish', () => {
     it('needs tests');
 });

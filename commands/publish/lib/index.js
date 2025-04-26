@@ -3,9 +3,9 @@
 const path = require('path');
 const fs = require('fs');
 const fse = require('fs-extra');
-const Command = require('@imooc-cli-dev/command');
-const log = require('@imooc-cli-dev/log');
-const Git = require('@imooc-cli-dev/git');
+const Command = require('@asd741-cli-dev/command');
+const log = require('@asd741-cli-dev/log');
+const Git = require('@asd741-cli-dev/git');
 
 class PublishCommand extends Command {
   init() {

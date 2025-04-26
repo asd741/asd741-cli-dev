@@ -8,10 +8,10 @@ const glob = require('glob');
 const ejs = require('ejs');
 const semver = require('semver');
 const userHome = require('user-home');
-const Command = require('@imooc-cli-dev/command');
-const Package = require('@imooc-cli-dev/package');
-const log = require('@imooc-cli-dev/log');
-const { spinnerStart, sleep, execAsync } = require('@imooc-cli-dev/utils');
+const Command = require('@asd741-cli-dev/command');
+const Package = require('@asd741-cli-dev/package');
+const log = require('@asd741-cli-dev/log');
+const { spinnerStart, sleep, execAsync } = require('@asd741-cli-dev/utils');
 
 const getProjectTemplate = require('./getProjectTemplate');
 
@@ -204,8 +204,8 @@ class InitCommand extends Command {
   async downloadTemplate() {
     const { projectTemplate } = this.projectInfo;
     const templateInfo = this.template.find(item => item.npmName === projectTemplate);
-    const targetPath = path.resolve(userHome, '.imooc-cli-dev', 'template');
-    const storeDir = path.resolve(userHome, '.imooc-cli-dev', 'template', 'node_modules');
+    const targetPath = path.resolve(userHome, '.asd741-cli-dev', 'template');
+    const storeDir = path.resolve(userHome, '.asd741-cli-dev', 'template', 'node_modules');
     const { npmName, version } = templateInfo;
     this.templateInfo = templateInfo;
     const templateNpm = new Package({

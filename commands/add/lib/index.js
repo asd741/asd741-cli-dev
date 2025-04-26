@@ -8,11 +8,11 @@ const fse = require('fs-extra');
 const glob = require('glob');
 const ejs = require('ejs');
 const semver = require('semver');
-const Command = require('@imooc-cli-dev/command');
-const Package = require('@imooc-cli-dev/package');
-const request = require('@imooc-cli-dev/request');
-const log = require('@imooc-cli-dev/log');
-const { sleep, spinnerStart, execAsync } = require('@imooc-cli-dev/utils');
+const Command = require('@asd741-cli-dev/command');
+const Package = require('@asd741-cli-dev/package');
+const request = require('@asd741-cli-dev/request');
+const log = require('@asd741-cli-dev/log');
+const { sleep, spinnerStart, execAsync } = require('@asd741-cli-dev/utils');
 
 const ADD_MODE_SECTION = 'section';
 const ADD_MODE_PAGE = 'page';
@@ -336,7 +336,7 @@ class AddCommand extends Command {
     // 获取模板名称
     const name = addMode === ADD_MODE_PAGE ? '页面' : '代码片段';
     // 缓存文件夹
-    const targetPath = path.resolve(userHome, '.imooc-cli-dev', 'template');
+    const targetPath = path.resolve(userHome, '.asd741-cli-dev', 'template');
     // 缓存真实路径
     const storeDir = path.resolve(targetPath, 'node_modules');
     const { npmName, version } = addMode === ADD_MODE_PAGE ? this.pageTemplate : this.sectionTemplate;

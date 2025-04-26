@@ -1,8 +1,8 @@
 {
-  "name": "@imooc-cli-dev/publish",
+  "name": "@asd741-cli-dev/publish",
   "version": "1.0.5",
   "description": "> TODO: description",
-  "author": "sam <247765564@qq.com>",
+  "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
   "license": "ISC",
   "main": "lib/index.js",
@@ -16,17 +16,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://git.imooc.com/class-110/imooc-cli-dev.git"
-  },
+
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@imooc-cli-dev/command": "^1.0.5",
-    "@imooc-cli-dev/git": "^1.0.5",
-    "@imooc-cli-dev/log": "^1.0.4",
+    "@asd741-cli-dev/command": "^1.0.5",
+    "@asd741-cli-dev/git": "^1.0.5",
+    "@asd741-cli-dev/log": "^1.0.4",
     "fs-extra": "^10.0.0"
   },
   "gitHead": "50a91c0a755217bc420511a66e41655ff30f5f36"

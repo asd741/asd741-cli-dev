@@ -1,8 +1,8 @@
 {
-  "name": "@imooc-cli-dev/add",
+  "name": "@asd741-cli-dev/add",
   "version": "1.0.5",
-  "description": "imooc-cli-dev add",
-  "author": "sam <247765564@qq.com>",
+  "description": "asd741-cli-dev add",
+  "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
   "license": "ISC",
   "main": "lib/index.js",
@@ -13,19 +13,16 @@
   "files": [
     "lib"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://git.imooc.com/class-110/imooc-cli-dev.git"
-  },
+
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@imooc-cli-dev/command": "file:../../models/command",
-    "@imooc-cli-dev/log": "file:../../utils/log",
-    "@imooc-cli-dev/package": "file:../../models/package",
-    "@imooc-cli-dev/utils": "file:../../utils/utils",
-    "@imooc-cli-dev/request": "file:../../utils/request",
+    "@asd741-cli-dev/command": "file:../../models/command",
+    "@asd741-cli-dev/log": "file:../../utils/log",
+    "@asd741-cli-dev/package": "file:../../models/package",
+    "@asd741-cli-dev/utils": "file:../../utils/utils",
+    "@asd741-cli-dev/request": "file:../../utils/request",
     "ejs": "^3.1.6",
     "fs-extra": "^10.0.0",
     "glob": "^7.2.0",

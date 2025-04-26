@@ -1,8 +1,8 @@
 {
   "name": "@asd741-cli-dev/exec",
-  "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "version": "1.0.5",
+  "description": "asd741-cli-dev execute package",
+  "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
   "license": "ISC",
   "main": "lib/index.js",
@@ -16,13 +16,14 @@
   "publishConfig": {
     "access": "public"
   },
+
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@asd741-cli-dev/log": "file:../../utils/log",
-    "@asd741-cli-dev/package": "file:../../models/package",
-    "@asd741-cli-dev/utils": "file:../../utils/utils"
+    "@asd741-cli-dev/log": "^1.0.4",
+    "@asd741-cli-dev/package": "^1.0.5",
+    "@asd741-cli-dev/utils": "^1.0.4"
   },
   "gitHead": "50a91c0a755217bc420511a66e41655ff30f5f36"
 }
