@@ -6,7 +6,7 @@ const request = require('@asd741-cli-dev/request');
 const get = require('lodash/get');
 const inquirer = require('inquirer');
 
-const WS_SERVER = 'http://book.youbaobao.xyz:7001';
+const WS_SERVER = 'http://asd741.cli:7001';
 const TIME_OUT = 5 * 60 * 1000;
 const CONNECT_TIME_OUT = 5 * 1000;
 

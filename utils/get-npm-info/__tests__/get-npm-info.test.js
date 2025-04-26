@@ -26,9 +26,9 @@ describe('npm方法测试', () => {
   });
   it('getDefaultRegistry方法', async function() {
     const registry = await npm.getDefaultRegistry(true);
-    registry.should.equal('https://registry.npmjs.org');
     const registry2 = await npm.getDefaultRegistry();
-    registry2.should.equal('https://registry.npm.taobao.org');
+    registry.should.equal('https://registry.npm.taobao.org');
+    registry2.should.equal('https://registry.npmjs.org');
   });
   it('getNpmLatestVersion方法', async function() {
     const version = await npm.getNpmLatestVersion(PACKAGE_NAME);
