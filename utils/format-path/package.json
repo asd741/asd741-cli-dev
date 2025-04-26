@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/format-path",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "format path",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -16,7 +16,6 @@
   "publishConfig": {
     "access": "public"
   },
-
   "scripts": {
     "test": "mocha __tests__/format-path.test.js"
   },

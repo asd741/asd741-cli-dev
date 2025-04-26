@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/init",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "asd741-cli-dev init",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -16,16 +16,15 @@
   "publishConfig": {
     "access": "public"
   },
-
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@asd741-cli-dev/command": "^1.0.5",
-    "@asd741-cli-dev/log": "^1.0.4",
-    "@asd741-cli-dev/package": "^1.0.5",
-    "@asd741-cli-dev/request": "^1.0.0",
-    "@asd741-cli-dev/utils": "^1.0.4",
+    "@asd741-cli-dev/command": "^1.0.6",
+    "@asd741-cli-dev/log": "^1.0.6",
+    "@asd741-cli-dev/package": "^1.0.6",
+    "@asd741-cli-dev/request": "^1.0.6",
+    "@asd741-cli-dev/utils": "^1.0.6",
     "ejs": "^3.1.5",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",

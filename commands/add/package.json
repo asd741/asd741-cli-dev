@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/add",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "asd741-cli-dev add",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -13,7 +13,6 @@
   "files": [
     "lib"
   ],
-
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
@@ -21,8 +20,8 @@
     "@asd741-cli-dev/command": "file:../../models/command",
     "@asd741-cli-dev/log": "file:../../utils/log",
     "@asd741-cli-dev/package": "file:../../models/package",
-    "@asd741-cli-dev/utils": "file:../../utils/utils",
     "@asd741-cli-dev/request": "file:../../utils/request",
+    "@asd741-cli-dev/utils": "file:../../utils/utils",
     "ejs": "^3.1.6",
     "fs-extra": "^10.0.0",
     "glob": "^7.2.0",
