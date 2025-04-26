@@ -163,7 +163,7 @@ class InitCommand extends Command {
   }
 
   async createComponentFile(targetPath) {
-    const templateInfo = this.templateInfo;
+    const templateInfo = this.templateInfo;    
     const projectInfo = this.projectInfo;
     if (templateInfo.tag.includes(TYPE_COMPONENT)) {
       const componentData = {
