@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/package",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "asd741-cli-dev npm modules",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -20,9 +20,9 @@
     "test": "mocha __tests__/package.test.js"
   },
   "dependencies": {
-    "@asd741-cli-dev/format-path": "^1.0.10",
-    "@asd741-cli-dev/get-npm-info": "^1.0.10",
-    "@asd741-cli-dev/utils": "^1.0.10",
+    "@asd741-cli-dev/format-path": "^1.0.11",
+    "@asd741-cli-dev/get-npm-info": "^1.0.11",
+    "@asd741-cli-dev/utils": "^1.0.11",
     "fs-extra": "^9.0.1",
     "npminstall": "^4.10.0",
     "path-exists": "^4.0.0",
