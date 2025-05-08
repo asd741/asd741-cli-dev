@@ -161,7 +161,7 @@ class Git {
     await this.checkNotCommitted();
     // 5.切换开发分支
     await this.checkoutBranch(this.branch);
-    // 6.合并远程master分支和开发分支代码
+    // 6.合并远程main分支和开发分支代码
     await this.pullRemoteMasterAndBranch();
     // 7.将开发分支推送到远程仓库
     await this.pushRemoteRepo(this.branch);
@@ -255,12 +255,12 @@ class Git {
           },
         },
           {
-            title: '切换分支到master',
+            title: '切换分支到main',
             task: () => {
               return new Observable(o => {
-                o.next('正在切换master分支');
+                o.next('正在切换main分支');
                 delay(() => {
-                  this.checkoutBranch('master').then(() => {
+                  this.checkoutBranch('main').then(() => {
                     o.complete();
                   });
                 });
@@ -268,12 +268,12 @@ class Git {
             },
           },
           {
-            title: '将开发分支代码合并到master',
+            title: '将开发分支代码合并到main',
             task: () => {
               return new Observable(o => {
-                o.next('正在合并到master分支');
+                o.next('正在合并到main分支');
                 delay(() => {
-                  this.mergeBranchToMaster('master').then(() => {
+                  this.mergeBranchToMaster('main').then(() => {
                     o.complete();
                   });
                 });
@@ -281,12 +281,12 @@ class Git {
             },
           },
           {
-            title: '将代码推送到远程master',
+            title: '将代码推送到远程main',
             task: () => {
               return new Observable(o => {
-                o.next('正在推送master分支');
+                o.next('正在推送main分支');
                 delay(() => {
-                  this.pushRemoteRepo('master').then(() => {
+                  this.pushRemoteRepo('main').then(() => {
                     o.complete();
                   });
                 });
@@ -338,9 +338,9 @@ class Git {
   }
 
   async mergeBranchToMaster() {
-    // log.info('开始合并代码', `[${this.branch}] -> [master]`);
-    await this.git.mergeFromTo(this.branch, 'master');
-    // log.success('代码合并成功', `[${this.branch}] -> [master]`);
+    // log.info('开始合并代码', `[${this.branch}] -> [main]`);
+    await this.git.mergeFromTo(this.branch, 'main');
+    // log.success('代码合并成功', `[${this.branch}] -> [main]`);
   }
 
   async checkTag() {
@@ -447,9 +447,9 @@ class Git {
   }
 
   async pullRemoteMasterAndBranch() {
-    log.info(`合并 [master] -> [${this.branch}]`);
-    await this.pullRemoteRepo('master');
-    log.success('合并远程 [master] 分支代码成功');
+    log.info(`合并 [main] -> [${this.branch}]`);
+    await this.pullRemoteRepo('main');
+    log.success('合并远程 [main] 分支代码成功');
     await this.checkConflicted();
     log.info('检查远程开发分支');
     const remoteBranchList = await this.getRemoteBranchList();
@@ -562,11 +562,11 @@ class Git {
     await this.checkConflicted();
     await this.checkNotCommitted();
     if (await this.checkRemoteMaster()) {
-      await this.pullRemoteRepo('master', {
+      await this.pullRemoteRepo('main', {
         '--allow-unrelated-histories': null,
       });
     } else {
-      await this.pushRemoteRepo('master');
+      await this.pushRemoteRepo('main');
     }
   }
 
@@ -585,7 +585,7 @@ class Git {
   }
 
   async checkRemoteMaster() {
-    return (await this.git.listRemote(['--refs'])).indexOf('refs/heads/master') >= 0;
+    return (await this.git.listRemote(['--refs'])).indexOf('refs/heads/main') >= 0;
   }
 
   async checkNotCommitted() {
