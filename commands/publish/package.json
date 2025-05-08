@@ -20,9 +20,9 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@asd741-cli-dev/command": "^1.0.6",
-    "@asd741-cli-dev/git": "^1.0.6",
-    "@asd741-cli-dev/log": "^1.0.6",
+    "@asd741-cli-dev/command": "^1.0.7",
+    "@asd741-cli-dev/git": "^1.0.7",
+    "@asd741-cli-dev/log": "^1.0.7",
     "fs-extra": "^10.0.0"
   },
   "gitHead": "50a91c0a755217bc420511a66e41655ff30f5f36"

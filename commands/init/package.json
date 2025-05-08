@@ -20,11 +20,11 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@asd741-cli-dev/command": "^1.0.6",
-    "@asd741-cli-dev/log": "^1.0.6",
-    "@asd741-cli-dev/package": "^1.0.6",
-    "@asd741-cli-dev/request": "^1.0.6",
-    "@asd741-cli-dev/utils": "^1.0.6",
+    "@asd741-cli-dev/command": "^1.0.7",
+    "@asd741-cli-dev/log": "^1.0.7",
+    "@asd741-cli-dev/package": "^1.0.7",
+    "@asd741-cli-dev/request": "^1.0.7",
+    "@asd741-cli-dev/utils": "^1.0.7",
     "ejs": "^3.1.5",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",

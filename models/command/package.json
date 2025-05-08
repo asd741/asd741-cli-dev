@@ -20,7 +20,7 @@
     "test": "mocha __tests__/Command.test.js"
   },
   "dependencies": {
-    "@asd741-cli-dev/log": "^1.0.6",
+    "@asd741-cli-dev/log": "^1.0.7",
     "colors": "^1.4.0",
     "semver": "^7.3.4"
   },

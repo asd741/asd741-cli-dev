@@ -20,10 +20,10 @@
     "test": "echo \"Run testing from core\""
   },
   "dependencies": {
-    "@asd741-cli-dev/exec": "^1.0.6",
+    "@asd741-cli-dev/exec": "^1.0.7",
     "@asd741-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
-    "@asd741-cli-dev/init": "^1.0.6",
-    "@asd741-cli-dev/log": "^1.0.6",
+    "@asd741-cli-dev/init": "^1.0.7",
+    "@asd741-cli-dev/log": "^1.0.7",
     "colors": "^1.4.0",
     "commander": "^6.2.1",
     "dotenv": "^8.2.0",
