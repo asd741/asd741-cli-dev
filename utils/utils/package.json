@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/utils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "asd741-clid-dev utils",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -16,7 +16,7 @@
   "scripts": {
     "test": "echo \"Run testing from utils\""
   },
-  "gitHead": "ad99cd763be44ac7ec0a97cb233ce8d0f93d0b96",
+  "gitHead": "980168240f0a5eb882b2b76625a0969cfeea0bfb",
   "publishConfig": {
     "access": "public"
   },
