@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/publish",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "> TODO: description",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -20,9 +20,9 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@asd741-cli-dev/command": "^1.0.15",
-    "@asd741-cli-dev/git": "^1.0.15",
-    "@asd741-cli-dev/log": "^1.0.15",
+    "@asd741-cli-dev/command": "^1.0.16",
+    "@asd741-cli-dev/git": "^1.0.16",
+    "@asd741-cli-dev/log": "^1.0.16",
     "fs-extra": "^10.0.0"
   },
   "gitHead": "9c5b294be8a22de532cf9db0af63e118c0736262"
