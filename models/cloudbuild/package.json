@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/cloudbuild",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "> TODO: description",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -17,14 +17,14 @@
     "test": "mocha __tests__/cloudbuild.test.js"
   },
   "dependencies": {
-    "@asd741-cli-dev/log": "^1.0.7",
-    "@asd741-cli-dev/request": "^1.0.7",
+    "@asd741-cli-dev/log": "^1.0.8",
+    "@asd741-cli-dev/request": "^1.0.8",
     "inquirer": "^8.1.1",
     "lodash": "^4.17.21",
     "socket.io-client": "^2.0.0"
   },
   "devDependencies": {
-    "@asd741-cli-dev/git": "^1.0.7",
+    "@asd741-cli-dev/git": "^1.0.8",
     "mocha": "^9.1.1",
     "should": "^13.2.3",
     "simple-git": "^2.45.0"
