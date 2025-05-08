@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/request",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "> TODO: description",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -22,5 +22,5 @@
   "dependencies": {
     "axios": "^0.21.1"
   },
-  "gitHead": "ca578a4e4aa1d462da3972d10b4157216da57f68"
+  "gitHead": "9c5b294be8a22de532cf9db0af63e118c0736262"
 }

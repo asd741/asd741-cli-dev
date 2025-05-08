@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/add",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "asd741-cli-dev add",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -17,11 +17,11 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@asd741-cli-dev/command": "^1.0.14",
-    "@asd741-cli-dev/log": "^1.0.14",
-    "@asd741-cli-dev/package": "^1.0.14",
-    "@asd741-cli-dev/request": "^1.0.14",
-    "@asd741-cli-dev/utils": "^1.0.14",
+    "@asd741-cli-dev/command": "^1.0.15",
+    "@asd741-cli-dev/log": "^1.0.15",
+    "@asd741-cli-dev/package": "^1.0.15",
+    "@asd741-cli-dev/request": "^1.0.15",
+    "@asd741-cli-dev/utils": "^1.0.15",
     "ejs": "^3.1.6",
     "fs-extra": "^10.0.0",
     "glob": "^7.2.0",
@@ -31,5 +31,8 @@
     "semver": "^7.3.5",
     "user-home": "^3.0.0"
   },
-  "gitHead": "ca578a4e4aa1d462da3972d10b4157216da57f68"
+  "gitHead": "9c5b294be8a22de532cf9db0af63e118c0736262",
+  "publishConfig": {
+    "access": "public"
+  }
 }
