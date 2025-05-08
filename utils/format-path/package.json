@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/format-path",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "format path",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -23,5 +23,5 @@
     "mocha": "^9.1.1",
     "should": "^13.2.3"
   },
-  "gitHead": "8c87b6544ec8488299bdc4a89850b4b0b10572df"
+  "gitHead": "2a43f63863b1538a6e2d82f9ed9a2922ab18bde3"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/exec",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "asd741-cli-dev execute package",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -20,9 +20,9 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@asd741-cli-dev/log": "^1.0.12",
-    "@asd741-cli-dev/package": "^1.0.12",
-    "@asd741-cli-dev/utils": "^1.0.12"
+    "@asd741-cli-dev/log": "^1.0.13",
+    "@asd741-cli-dev/package": "^1.0.13",
+    "@asd741-cli-dev/utils": "^1.0.13"
   },
-  "gitHead": "8c87b6544ec8488299bdc4a89850b4b0b10572df"
+  "gitHead": "2a43f63863b1538a6e2d82f9ed9a2922ab18bde3"
 }
