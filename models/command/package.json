@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/command",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "asd741-cli-dev command",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -20,7 +20,7 @@
     "test": "mocha __tests__/Command.test.js"
   },
   "dependencies": {
-    "@asd741-cli-dev/log": "^1.0.11",
+    "@asd741-cli-dev/log": "^1.0.12",
     "colors": "^1.4.0",
     "semver": "^7.3.4"
   },
@@ -28,5 +28,5 @@
     "mocha": "^9.1.1",
     "should": "^13.2.3"
   },
-  "gitHead": "191338f8a16575485dffe31b0f6229bb0ef40a1b"
+  "gitHead": "8c87b6544ec8488299bdc4a89850b4b0b10572df"
 }

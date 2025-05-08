@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/log",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "asd741-cli-dev log",
   "keywords": [
     "log"
@@ -25,5 +25,5 @@
   "dependencies": {
     "npmlog": "^4.1.2"
   },
-  "gitHead": "191338f8a16575485dffe31b0f6229bb0ef40a1b"
+  "gitHead": "8c87b6544ec8488299bdc4a89850b4b0b10572df"
 }

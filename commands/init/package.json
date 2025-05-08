@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/init",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "asd741-cli-dev init",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -20,11 +20,11 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@asd741-cli-dev/command": "^1.0.11",
-    "@asd741-cli-dev/log": "^1.0.11",
-    "@asd741-cli-dev/package": "^1.0.11",
-    "@asd741-cli-dev/request": "^1.0.11",
-    "@asd741-cli-dev/utils": "^1.0.11",
+    "@asd741-cli-dev/command": "^1.0.12",
+    "@asd741-cli-dev/log": "^1.0.12",
+    "@asd741-cli-dev/package": "^1.0.12",
+    "@asd741-cli-dev/request": "^1.0.12",
+    "@asd741-cli-dev/utils": "^1.0.12",
     "ejs": "^3.1.5",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",
@@ -34,5 +34,5 @@
     "spinner": "^0.3.4",
     "user-home": "^2.0.0"
   },
-  "gitHead": "191338f8a16575485dffe31b0f6229bb0ef40a1b"
+  "gitHead": "8c87b6544ec8488299bdc4a89850b4b0b10572df"
 }
