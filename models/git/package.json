@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/git",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "> TODO: description",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -17,10 +17,10 @@
     "test": "mocha __tests__/git.test.js"
   },
   "dependencies": {
-    "@asd741-cli-dev/cloudbuild": "^1.0.13",
-    "@asd741-cli-dev/log": "^1.0.13",
-    "@asd741-cli-dev/request": "^1.0.13",
-    "@asd741-cli-dev/utils": "^1.0.13",
+    "@asd741-cli-dev/cloudbuild": "^1.0.14",
+    "@asd741-cli-dev/log": "^1.0.14",
+    "@asd741-cli-dev/request": "^1.0.14",
+    "@asd741-cli-dev/utils": "^1.0.14",
     "axios": "^0.21.1",
     "fs-extra": "^10.0.0",
     "inquirer": "^8.1.0",
