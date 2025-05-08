@@ -1,6 +1,6 @@
 {
   "name": "@asd741-cli-dev/core",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "asd741-cli-dev core",
   "author": "asd741 <a22833593@gmail.com>",
   "homepage": "",
@@ -20,10 +20,10 @@
     "test": "echo \"Run testing from core\""
   },
   "dependencies": {
-    "@asd741-cli-dev/exec": "^1.0.9",
-    "@asd741-cli-dev/get-npm-info": "^1.0.9",
-    "@asd741-cli-dev/init": "^1.0.9",
-    "@asd741-cli-dev/log": "^1.0.9",
+    "@asd741-cli-dev/exec": "^1.0.10",
+    "@asd741-cli-dev/get-npm-info": "^1.0.10",
+    "@asd741-cli-dev/init": "^1.0.10",
+    "@asd741-cli-dev/log": "^1.0.10",
     "colors": "^1.4.0",
     "commander": "^6.2.1",
     "dotenv": "^8.2.0",
@@ -34,7 +34,7 @@
     "semver": "^7.3.4",
     "user-home": "^2.0.0"
   },
-  "gitHead": "980168240f0a5eb882b2b76625a0969cfeea0bfb",
+  "gitHead": "191338f8a16575485dffe31b0f6229bb0ef40a1b",
   "publishConfig": {
     "access": "public"
   }
