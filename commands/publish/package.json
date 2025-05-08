@@ -23,7 +23,7 @@
     "@asd741-cli-dev/command": "^1.0.18",
     "@asd741-cli-dev/git": "^1.0.18",
     "@asd741-cli-dev/log": "^1.0.18",
-    "fs-extra": "^10.0.0"
+    "fs-extra": "^10.1.0"
   },
   "gitHead": "9c5b294be8a22de532cf9db0af63e118c0736262"
 }

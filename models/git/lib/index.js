@@ -162,7 +162,7 @@ class Git {
     // 5.切换开发分支
     await this.checkoutBranch(this.branch);
     // 6.合并远程main分支和开发分支代码
-    await this.pullRemoteMasterAndBranch();
+    await this.pullRemoteMainAndBranch();
     // 7.将开发分支推送到远程仓库
     await this.pushRemoteRepo(this.branch);
   }
@@ -273,7 +273,7 @@ class Git {
               return new Observable(o => {
                 o.next('正在合并到main分支');
                 delay(() => {
-                  this.mergeBranchToMaster('main').then(() => {
+                  this.mergeBranchToMain('main').then(() => {
                     o.complete();
                   });
                 });
@@ -337,7 +337,7 @@ class Git {
     // log.success('删除远程分支成功', this.branch);
   }
 
-  async mergeBranchToMaster() {
+  async mergeBranchToMain() {
     // log.info('开始合并代码', `[${this.branch}] -> [main]`);
     await this.git.mergeFromTo(this.branch, 'main');
     // log.success('代码合并成功', `[${this.branch}] -> [main]`);
@@ -446,7 +446,7 @@ class Git {
     return fse.readJsonSync(pkgPath);
   }
 
-  async pullRemoteMasterAndBranch() {
+  async pullRemoteMainAndBranch() {
     log.info(`合并 [main] -> [${this.branch}]`);
     await this.pullRemoteRepo('main');
     log.success('合并远程 [main] 分支代码成功');
@@ -561,7 +561,7 @@ class Git {
   async initCommit() {
     await this.checkConflicted();
     await this.checkNotCommitted();
-    if (await this.checkRemoteMaster()) {
+    if (await this.checkRemoteMain()) {
       await this.pullRemoteRepo('main', {
         '--allow-unrelated-histories': null,
       });
@@ -584,7 +584,7 @@ class Git {
     // log.success('推送代码成功');
   }
 
-  async checkRemoteMaster() {
+  async checkRemoteMain() {
     return (await this.git.listRemote(['--refs'])).indexOf('refs/heads/main') >= 0;
   }
 
