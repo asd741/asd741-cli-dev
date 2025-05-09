@@ -448,15 +448,8 @@ class Git {
 
   async pullRemoteMainAndBranch() {
     log.info(`合并 [main] -> [${this.branch}]`);
-    try {
-      await this.pullRemoteRepo('main');
-      log.success('合并远程 [main] 分支代码成功');
-    } catch (err) {
-      // 如果 main 分支不存在，嘗試創建它
-      log.info('main 分支不存在，正在創建...');
-      await this.git.checkoutLocalBranch('main');
-      await this.pushRemoteRepo('main');
-    }
+    await this.pullRemoteRepo('main');
+    log.success('合并远程 [main] 分支代码成功');
     await this.checkConflicted();
     log.info('检查远程开发分支');
     const remoteBranchList = await this.getRemoteBranchList();

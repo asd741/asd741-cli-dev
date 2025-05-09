@@ -70,6 +70,8 @@ function registerCommand() {
 
   // 指定targetPath
   program.on('option:targetPath', function() {
+    console.log('yee',program.targetPath);
+    
     process.env.CLI_TARGET_PATH = program.targetPath;
   });
 
