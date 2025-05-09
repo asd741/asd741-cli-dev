@@ -37,11 +37,11 @@ async function exec() {
       packageName,
       packageVersion,
     });
-    if (await pkg.exists()) {
+    if (await pkg.exists()) {      
       // 更新package
       await pkg.update();
     } else {
-      // 安装package
+      // 安装package      
       await pkg.install();
     }
   } else {
@@ -69,6 +69,8 @@ async function exec() {
       });
       args[args.length - 1] = o;
       const code = `require('${rootFile}').call(null, ${JSON.stringify(args)})`;
+      console.log(rootFile,'rootFile!!!!');
+      
       const child = spawn('node', ['-e', code], {
         cwd: process.cwd(),
         stdio: 'inherit',
